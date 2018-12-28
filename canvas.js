@@ -100,7 +100,7 @@ var Canvas = {
 	redraw: function() {
 	  	Canvas.context.clearRect(0, 0, Canvas.canvasElt.width, Canvas.canvasElt.height);
 	  
-		Canvas.context.strokeStyle = "#000";
+		Canvas.context.strokeStyle = "#111";
 		Canvas.context.lineJoin = "round";
 		Canvas.context.lineWidth = 5;
 				
