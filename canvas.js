@@ -8,9 +8,9 @@ var Canvas = {
 	clickDrag: [],
 
 	openCanvas: function() {
-		$('#btn-tobook').on("click", function() {
-			$("#canvas-container").show();
-			$('#btn-tobook').hide();
+		$('#btn-todraw').on("click", function() {
+			$("#canvas-container").fadeIn(300);
+			$('#btn-todraw').hide();
 			Canvas.init();
 		});
 	},
@@ -77,14 +77,16 @@ var Canvas = {
 
 		$('#btn-cancel').on("click", function() {
 			Canvas.clearCanvas();
-			Canvas.canvasDiv.hide();
-			$('#btn-tobook').show();
+			Canvas.canvasDiv.fadeOut(300, function() {
+				$('#btn-todraw').show();
+			});
 		});
 
 		$('#btn-confirm').on("click", function() {
 			Canvas.clearCanvas();
-			Canvas.canvasDiv.hide();
-			$('#btn-tobook').show();
+			Canvas.canvasDiv.fadeOut(300, function() {
+				$('#btn-todraw').show();
+			});
 		});
 
 		Canvas.resizeCanvas();

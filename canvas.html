@@ -8,16 +8,17 @@
 	<link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
 	<h1>Exemple de Canvas</h1>
 	<p>Cliquez sur le bouton "DESSINER" !</p>
-	<button type="button" id="btn-tobook">DESSINER</button>
+	<button type="button" id="btn-todraw" class="btn icon-pencil"><span>Dessiner</span></button>
 	<div id="canvas-container">
         <canvas id="canvas"></canvas>
-        <button type="button" id="btn-clear">EFFACER</button>
-        <button type="button" id="btn-cancel">ANNULER</button>
-        <button type="button" id="btn-confirm">VALIDER</button>
+        <button type="button" id="btn-clear" class="btn icon-eraser"><span>EFFACER</span></button>
+        <button type="button" id="btn-cancel" class="btn icon-times"><span>ANNULER</span></button>
+        <button type="button" id="btn-confirm" class="btn icon-check"><span>VALIDER</span></button>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="canvas.js"></script>
