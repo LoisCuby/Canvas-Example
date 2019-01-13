@@ -86,6 +86,7 @@ var Canvas = {
 			Canvas.clearCanvas();
 			Canvas.canvasDiv.fadeOut(300, function() {
 				$('#btn-todraw').show();
+				$('#confirm-message').show().delay(2000).hide("500");
 			});
 		});
 
